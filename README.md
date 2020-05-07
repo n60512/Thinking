@@ -68,3 +68,7 @@
 -   pymysql
 -   pandas
 -   FastText pre-trained embedding (Chinese)
+
+# Reference
+-   http://treebank.sinica.edu.tw/
+-   https://fasttext.cc/
