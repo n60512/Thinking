@@ -59,3 +59,12 @@
 ### DBConnector
 
 - 資料庫連結
+
+# Environments
+
+-   Python 3
+-   gensim
+-   numpy
+-   pymysql
+-   pandas
+-   FastText pre-trained embedding (Chinese)
