@@ -10,6 +10,7 @@ class GatherOptions():
                
         current_time = datetime.datetime.now()
         parser.add_argument("--save_dir", default=("Thinking\log\{:%Y%m%d_%H_%M}".format(current_time)), help="path for saving")
+        parser.add_argument("--model_name", default="pretrain_fasttext_cc_zh_300.bin", help="Model name")
         parser.add_argument("--game", default=("oneimagetest"), help="Choose thinking game")
 
         parser.add_argument("--k_sim", default=10, help="Select topk similar word from fasttext model")

@@ -52,9 +52,16 @@
 
 - 參數設定
 	- save_dir : log file 儲存
+	- model_name: 模型名稱
 	- game : oneimage/drawing
 	- k_sim : 選取 top k 相似高的字詞
 	- _layer_depth : Ehow 樹深 (越深表示越容易)
+
+- Database informaiton
+	- host
+	- user
+	- password
+	- db
 
 ### DBConnector
 
@@ -68,6 +75,10 @@
 -   pymysql
 -   pandas
 -   FastText pre-trained embedding (Chinese)
+
+# Install
+
+
 
 # Reference
 -   http://treebank.sinica.edu.tw/

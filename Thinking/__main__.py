@@ -63,12 +63,12 @@ class SearchTaxonomy(object):
                     return -1
 
 class Analyse():
-    def __init__(self, chosen_model = 'fasttext' , fpath = ''):
+    def __init__(self, chosen_model = 'fasttext' , fpath = '', model_name='pretrain_fasttext_cc_zh_300.bin'):
         folder = 'Thinking\\data\\'
         if(chosen_model == 'fasttext'):
-            self.model = FastText.load_fasttext_format(folder + 'pretrain_fasttext_cc_zh_300.bin')
+            self.model = FastText.load_fasttext_format(folder + model_name)
         elif(chosen_model == 'wiki'):
-            self.model = models.Word2Vec.load(folder + 'Wiki_Ehownet.model')
+            self.model = models.Word2Vec.load(folder + model_name)
 
     def sort_dict(self, _dict):
         # default:sort by asc , reverse=True -> sort by dcs
@@ -350,7 +350,7 @@ if __name__ == "__main__":
         )    
 
     df_EhowCate, userAns, studentslist = _load_data(DBconn)
-    tool = Analyse(chosen_model='fasttext', fpath='pretrain_fasttext_cc_zh_300.bin')
+    tool = Analyse(chosen_model='fasttext', model_name=opt.model_name)
 
     """
     Prepare EhowCate data.
