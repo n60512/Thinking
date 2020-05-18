@@ -14,7 +14,12 @@ class GatherOptions():
 
         parser.add_argument("--k_sim", default=10, help="Select topk similar word from fasttext model")
         parser.add_argument("--_layer_depth", default=7, help="Set Ehow tree depth. (the lower number, easier)")
-                
+
+        parser.add_argument("--host", default='', help="Host")
+        parser.add_argument("--user", default='', help="User name")
+        parser.add_argument("--password", default='', help="Password")
+        parser.add_argument("--db", default='', help="Select database")
+
         self.parser = parser
 
     def parse(self, argv=None):

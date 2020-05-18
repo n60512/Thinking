@@ -343,15 +343,14 @@ def score(conn, tool, studentslist, userAns, ehowlist_ex_emb, k_sim=10, _layer_d
 if __name__ == "__main__":
     
     DBconn = DBConnector.DBConnection(
-        host='',
-        user='',
-        password='',
-        db=''
+        host=opt.host,
+        user=opt.user,
+        password=opt.password,
+        db=opt.db
         )    
 
     df_EhowCate, userAns, studentslist = _load_data(DBconn)
     tool = Analyse(chosen_model='fasttext', fpath='pretrain_fasttext_cc_zh_300.bin')
-    stop = 1
 
     """
     Prepare EhowCate data.
