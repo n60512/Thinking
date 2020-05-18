@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 Thinking\data
+data/pretrain_fasttext_cc_zh_300.bin
