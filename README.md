@@ -77,9 +77,16 @@
 -   pandas
 -   FastText pre-trained embedding (Chinese)
 
-# Install
+# Quick Start (example)
 
-
+```
+python Thinking \
+    --host 127.0.0.1 \
+    --user root \
+    --password 123456 \
+    --port 3306 \
+    --db thinking 
+```
 
 # Reference
 -   http://treebank.sinica.edu.tw/
