@@ -1,4 +1,5 @@
 # Scoring Thinking Game
+思考力測驗評分機制
 
 ## __main__.py
 
