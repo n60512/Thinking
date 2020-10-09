@@ -346,7 +346,8 @@ if __name__ == "__main__":
         host=opt.host,
         user=opt.user,
         password=opt.password,
-        db=opt.db
+        db=opt.db,
+        port=opt.port
         )    
 
     df_EhowCate, userAns, studentslist = _load_data(DBconn)

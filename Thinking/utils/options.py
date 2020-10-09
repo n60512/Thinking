@@ -10,7 +10,7 @@ class GatherOptions():
                
         current_time = datetime.datetime.now()
         parser.add_argument("--save_dir", default=("Thinking\log\{:%Y%m%d_%H_%M}".format(current_time)), help="path for saving")
-        parser.add_argument("--model_name", default="pretrain_fasttext_cc_zh_300.bin", help="Model name")
+        parser.add_argument("--model_name", default="cc.zh.300.bin", help="Model name")
         parser.add_argument("--game", default=("oneimagetest"), help="Choose thinking game")
 
         parser.add_argument("--k_sim", default=10, help="Select topk similar word from fasttext model")
@@ -19,6 +19,7 @@ class GatherOptions():
         parser.add_argument("--host", default='', help="Host")
         parser.add_argument("--user", default='', help="User name")
         parser.add_argument("--password", default='', help="Password")
+        parser.add_argument("--port", default='', type=int, help="Port")
         parser.add_argument("--db", default='', help="Select database")
 
         self.parser = parser

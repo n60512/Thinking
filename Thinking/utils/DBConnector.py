@@ -3,12 +3,13 @@ import io
 import datetime
 
 class DBConnection(object):
-    def __init__(self, host='localhost', user='root', password='123456', db='thinkingapp'):
+    def __init__(self, host='localhost', user='root', password='123456', db='thinkingapp', port=3306):
         super(DBConnection, self).__init__()
         self.connection = pymysql.connect(host=host,
                                     user=user,
                                     password=password,
                                     db=db,
+                                    port=port,
                                     charset='utf8mb4',
                                     cursorclass=pymysql.cursors.DictCursor)
         self.sqlCmd = ""
